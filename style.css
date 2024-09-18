@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-radius: 2px solid black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0aed37;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="time"] {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 150px; /* Minimum width for better responsiveness */
+}
+
+button {
+    padding: 10px 15px;
+    background: #ee4406;
+    color: white;
+    border: none;
+    border-radius: 2px solid black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #f19078;
+}
+
+/* Task List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+/* List Item Hover Effect */
+li:hover {
+    background: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="time"],
+    button {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Space between elements */
+    }
+}
